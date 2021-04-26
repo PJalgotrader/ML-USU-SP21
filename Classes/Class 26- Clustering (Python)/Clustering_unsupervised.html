@@ -13430,8 +13430,15 @@ C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
 <li>What can you conclude by focusing on Spending Score vs Annual income? do you see the clusters? How many?</li>
-<li>Do you think it is a good idea to keep gender in the model? why?</li>
+<li>Do you think it is a good idea to keep gender in the model? why? Here is a good discussion on categorical variables' clustering: <a href="https://datascience.stackexchange.com/questions/22/k-means-clustering-for-mixed-numeric-and-categorical-data#:~:text=It%20can%20handle%20mixed%20data,segregates%20Categorical%20and%20Numeric%20data">https://datascience.stackexchange.com/questions/22/k-means-clustering-for-mixed-numeric-and-categorical-data#:~:text=It%20can%20handle%20mixed%20data,segregates%20Categorical%20and%20Numeric%20data</a>.</li>
 </ol>
+<ul>
+<li><strong>Beyond K-Means algorithm</strong>: <ul>
+<li>K-mode clustering: <a href="https://pypi.org/project/kmodes/">https://pypi.org/project/kmodes/</a></li>
+<li>K-prototype clustering: <a href="https://towardsdatascience.com/the-k-prototype-as-clustering-algorithm-for-mixed-data-type-categorical-and-numerical-fe7c50538ebb">https://towardsdatascience.com/the-k-prototype-as-clustering-algorithm-for-mixed-data-type-categorical-and-numerical-fe7c50538ebb</a></li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13818,7 +13825,8 @@ C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#silhouette_samples(df_sc,kmeans.labels_)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># silhouette coefficients for each sample. </span>
+<span class="c1"># silhouette_samples(df_sc,kmeans.labels_)</span>
 </pre></div>
 
     </div>
@@ -14357,7 +14365,7 @@ C:\Users\jahan\Anaconda3\lib\site-packages\statsmodels\nonparametric\kdetools.py
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
 <span class="n">dend</span> <span class="o">=</span> <span class="n">sch</span><span class="o">.</span><span class="n">dendrogram</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">linkage</span><span class="p">(</span><span class="n">df_sc</span><span class="p">,</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;ward&#39;</span><span class="p">))</span>
-<span class="c1"># &#39;ward&#39; uses the Ward variance minimization algorithm</span>
+<span class="c1"># &#39;ward&#39; uses the &#39;ward&#39; linkage method (minimize the WCV)</span>
 </pre></div>
 
     </div>
