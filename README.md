@@ -1,4 +1,3 @@
-## Please note that all my new materials are moved to this repository: https://github.com/PJalgotrader/Machine_Learning-USU
 
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/4/44/Huntsman-Wordmark-with-USU-Blue.gif?style=centerme) 
 
@@ -7,9 +6,7 @@
 
 Repository for machine learning courses owned and maintained by prof. Jahangiry
 
-* The [main](https://github.com/PJalgotrader/Machine_Learning-USU/tree/main) branch contains some general machine learning contents including data, cheatsheets, Google Colab tutorials, PyCaret and etc.
-* To get access to the materials for older semesters, please check out existing branches (spring22, fall22, ...) 
-* Latest lecture slides and Python notebooks should be found under the [fall22](https://github.com/PJalgotrader/Machine_Learning-USU/tree/fall22) branch!
+### Please note that all my new materials are moved to this repository: https://github.com/PJalgotrader/Machine_Learning-USU
 
 
 ## 🚀 About Me
