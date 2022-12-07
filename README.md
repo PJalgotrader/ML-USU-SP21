@@ -4,7 +4,6 @@
 
 # Machine Learning
 
-Repository for machine learning courses owned and maintained by prof. Jahangiry
 
 ### Please note that all my new materials are moved to this repository: https://github.com/PJalgotrader/Machine_Learning-USU
 
@@ -43,4 +42,3 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 | Boosting                                                       |
 | Dimensionality Reduction: PCA                                                           |
 | Clustering : K-mean and Hirearchichal                                                  |
-| PyCaret me!                                                                                      |
